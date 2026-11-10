@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">Settings</string>
+    <string name="settings_ok">OK</string>
+    <string name="settings_cancel">Cancel</string>
+
+    <string name="settings_account">Account</string>
+    <string name="account_unavailable">This build has no Hi VPN service configured. You can connect to your own WireGuard server from the Servers tab.</string>
+    <string name="account_signed_out">Hi VPN accounts are anonymous: no email, just an account number. Keep it safe; it is the only way to sign in.</string>
+    <string name="account_create">Create account</string>
+    <string name="account_sign_in">Sign in</string>
+    <string name="account_sign_out">Sign out</string>
+    <string name="account_sign_out_title">Sign out?</string>
+    <string name="account_sign_out_body">This device\'s VPN key is revoked on the server and removed from this phone. You need your account number to sign in again.</string>
+    <string name="account_number">Account number</string>
+    <string name="account_show">Show</string>
+    <string name="account_hide">Hide</string>
+    <string name="account_plan">Plan</string>
+    <string name="account_expires">Paid until</string>
+    <string name="account_devices">Devices</string>
+    <string name="account_rotate">New device key</string>
+    <string name="account_rotated">Key replaced</string>
+    <string name="account_rotated_body">This device has a new WireGuard key and the old one was revoked. Reconnect to use it.</string>
+    <string name="account_rotate_failed">The key could not be replaced. Check your connection and try again.</string>
+    <string name="account_created_title">Write down your account number</string>
+    <string name="account_created_body">This is shown once. Anyone with this number can use your account.</string>
+    <string name="account_error_title">Something went wrong</string>
+    <string name="account_sign_in_failed">That account number was not recognised, or the service could not be reached.</string>
+    <string name="account_create_failed">The account could not be created. Try again shortly.</string>
+
+    <string name="settings_connection">Connection</string>
+    <string name="settings_profiles">Connection profiles</string>
+    <string name="settings_profiles_body">DNS, MTU, routing, LAN access and split tunneling</string>
+    <string name="settings_auto_connect">Connect when the app opens</string>
+    <string name="settings_auto_connect_body">To connect at startup without opening the app, use Always-on VPN below.</string>
+
+    <string name="settings_protection">Protection</string>
+    <string name="settings_always_on_title">Always-on VPN &amp; kill switch</string>
+    <string name="settings_always_on_body">Only Android can block all traffic when the VPN is down. Open VPN settings, tap the gear next to Hi VPN, and turn on \"Always-on VPN\" and \"Block connections without VPN\".</string>
+    <string name="settings_biometric">App lock</string>
+    <string name="settings_biometric_body">Require fingerprint, face or screen lock to open Hi VPN. The VPN keeps running while locked.</string>
+
+    <string name="settings_tools">Tools</string>
+    <string name="settings_diagnostics">Network diagnostics</string>
+    <string name="settings_diagnostics_body">IP, DNS, IPv6 and leak checks, latency and speed</string>
+
+    <string name="settings_appearance">Appearance</string>
+    <string name="theme_system">Follow system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <string name="settings_privacy">Privacy</string>
+    <string name="settings_privacy_device_title">Stored on this device</string>
+    <string name="settings_privacy_device_body">Connection profiles, preferences, favourite servers, the cached server list and daily traffic totals. Your WireGuard private keys and account number are encrypted with a key held by Android\'s Keystore. None of this is backed up to the cloud.</string>
+    <string name="settings_privacy_server_title">Stored on Hi VPN servers</string>
+    <string name="settings_privacy_server_body">A hash of your account number, your plan, and each device\'s public key and tunnel address. Not stored: the sites you visit, DNS queries, traffic content, your real IP address, or connection times.</string>
+
+    <string name="settings_about">About</string>
+    <string name="settings_version">Version</string>
+</resources>

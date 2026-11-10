@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Compose draws the UI; this theme only sets window defaults before Compose starts. -->
+    <style name="Theme.HiVpn" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/hi_light_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.HiVpn.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/hi_deep_navy</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.HiVpn</item>
+    </style>
+</resources>

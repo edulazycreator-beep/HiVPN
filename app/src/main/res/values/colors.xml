@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hi_deep_navy">#FF101827</color>
+    <color name="hi_primary_blue">#FF2563EB</color>
+    <color name="hi_accent_blue">#FF38BDF8</color>
+    <color name="hi_dark_background">#FF090F1A</color>
+    <color name="hi_light_background">#FFF5F7FB</color>
+    <color name="ic_launcher_background">#FF101827</color>
+</resources>

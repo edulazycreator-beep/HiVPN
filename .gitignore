@@ -1,0 +1,31 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+**/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+.kotlin/
+
+# Secrets — never commit (see docs/SECURITY.md)
+*.jks
+*.keystore
+keystore.properties
+*.p12
+*.pem
+*.key
+*.conf
+!**/src/test/resources/**/*.conf
+!infra/docker/nginx.conf
+google-services.json
+
+# Deployment secrets
+infra/docker/.env
+infra/docker/secrets/
+infra/docker/certbot-www/
+infra/scripts/pki/
+*.pem
+!core/network/src/test/resources/*

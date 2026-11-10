@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prof_title">Connection profiles</string>
+    <string name="prof_intro">The active profile decides DNS, MTU, routing and which apps use the VPN. Tap a profile to make it active.</string>
+    <string name="prof_new">New profile</string>
+    <string name="prof_back">Back</string>
+    <string name="prof_more">More options</string>
+    <string name="prof_active">Active</string>
+    <string name="prof_edit">Edit</string>
+    <string name="prof_duplicate">Duplicate</string>
+    <string name="prof_export">Export settings</string>
+    <string name="prof_delete">Delete</string>
+    <string name="prof_import">Import profile</string>
+    <string name="prof_import_confirm">Import</string>
+    <string name="prof_import_error">That is not a valid Hi VPN profile export.</string>
+    <string name="prof_cancel">Cancel</string>
+    <string name="prof_done">Done</string>
+    <string name="prof_sum_dns_auto">Automatic DNS</string>
+    <string name="prof_sum_dns_custom">DNS %1$s</string>
+    <string name="prof_sum_lan">LAN bypass</string>
+    <string name="prof_sum_only">%1$d apps only</string>
+    <string name="prof_sum_bypass">%1$d apps bypass</string>
+
+    <string name="prof_edit_title">Edit profile</string>
+    <string name="prof_save">Save</string>
+    <string name="prof_name">Profile name</string>
+    <string name="prof_auto">Automatic</string>
+
+    <string name="prof_dns">DNS</string>
+    <string name="prof_dns_auto">Automatic (VPN server resolver)</string>
+    <string name="prof_dns_cloudflare">Cloudflare (1.1.1.1)</string>
+    <string name="prof_dns_google">Google Public DNS (8.8.8.8)</string>
+    <string name="prof_dns_quad9">Quad9 (9.9.9.9)</string>
+    <string name="prof_dns_custom">Custom</string>
+    <string name="prof_dns_custom_hint">Up to 4 IPv4/IPv6 addresses, one per line</string>
+    <string name="prof_dns_note">DNS queries go through the tunnel to the address you choose. Android\'s Private DNS setting can override this; Diagnostics shows if it is on.</string>
+    <string name="prof_err_dns_empty">Enter at least one DNS server.</string>
+    <string name="prof_err_dns_many">Use at most 4 DNS servers.</string>
+    <string name="prof_err_dns_invalid">\"%1$s\" is not an IP address. Hostnames cannot be used here.</string>
+
+    <string name="prof_network">Network</string>
+    <string name="prof_mtu">MTU</string>
+    <string name="prof_mtu_help">1280–1500. Leave empty for automatic (1420). Try 1380 or 1280 if some sites stall.</string>
+    <string name="prof_keepalive">Persistent keepalive (seconds)</string>
+    <string name="prof_keepalive_help">Keeps the tunnel alive behind NAT. Empty = automatic (25 s), 0 = off.</string>
+
+    <string name="prof_routing">Routing</string>
+    <string name="prof_lan">Allow local network</string>
+    <string name="prof_lan_help">Printers, casting and devices on your Wi-Fi stay reachable. Private ranges bypass the VPN.</string>
+    <string name="prof_exclude">Always bypass these networks (CIDR)</string>
+    <string name="prof_exclude_help">One per line, e.g. a work subnet.</string>
+    <string name="prof_err_route">\"%1$s\" is not a valid network (example: 10.20.0.0/16).</string>
+
+    <string name="prof_split">Split tunneling</string>
+    <string name="prof_split_all">All apps use the VPN</string>
+    <string name="prof_split_only">Only selected apps use the VPN</string>
+    <string name="prof_split_bypass">Selected apps bypass the VPN</string>
+    <string name="prof_pick_apps">Choose apps (%1$d selected)</string>
+    <string name="prof_err_no_apps">Choose at least one app.</string>
+    <string name="prof_split_note">Android allows either an \"only these apps\" list or a \"bypass these apps\" list per connection, not both.</string>
+    <string name="prof_apps_title">Choose apps</string>
+    <string name="prof_apps_search">Search apps</string>
+</resources>

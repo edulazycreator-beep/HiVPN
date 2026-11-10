@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="diag_title">Network diagnostics</string>
+    <string name="diag_back">Back</string>
+    <string name="diag_run">Run checks</string>
+    <string name="diag_run_speed">Run with speed test</string>
+    <string name="diag_speed_note">The speed test downloads about 25 MB and uploads about 10 MB.</string>
+
+    <string name="diag_privacy">Privacy</string>
+    <string name="diag_privacy_note">These checks read how Android routes traffic on this device. For an independent test, open a leak-test website in your browser while connected.</string>
+    <string name="diag_pass">Pass</string>
+    <string name="diag_warn">Check</string>
+    <string name="diag_fail">Fail</string>
+    <string name="diag_info">Info</string>
+    <string name="diag_check_route">Traffic uses the VPN</string>
+    <string name="diag_check_dns">DNS goes through the tunnel</string>
+    <string name="diag_check_private_dns">Android Private DNS</string>
+    <string name="diag_check_ipv6">IPv6 is covered</string>
+    <string name="diag_check_webrtc">WebRTC in browsers</string>
+    <string name="diag_explain_route">Connect first. Without a tunnel, all traffic uses your normal network.</string>
+    <string name="diag_explain_private_dns">Private DNS is on. Its queries still travel inside the tunnel, but that provider, not your VPN resolver, answers them. Set it to Off or Automatic to use the VPN\'s DNS.</string>
+    <string name="diag_explain_ipv6">The tunnel has no IPv6 route. If your network has IPv6, some traffic could bypass the VPN. Reconnect, or use a server with IPv6.</string>
+    <string name="diag_explain_webrtc">Browsers can reveal local addresses through WebRTC. Hi VPN cannot see inside browsers; use a WebRTC leak test page and your browser\'s WebRTC settings.</string>
+
+    <string name="diag_ip">IP and DNS</string>
+    <string name="diag_public_ip">Public IP</string>
+    <string name="diag_country">Country</string>
+    <string name="diag_dns_resolve">example.com resolves to</string>
+
+    <string name="diag_connection">Connection</string>
+    <string name="diag_latency">Latency min / avg / max</string>
+    <string name="diag_jitter">Jitter</string>
+    <string name="diag_loss">Packet loss (TCP)</string>
+    <string name="diag_download">Download</string>
+    <string name="diag_upload">Upload</string>
+    <string name="diag_no_api">Latency and speed tests need the Hi VPN API, which this build does not have.</string>
+
+    <string name="diag_network">Network</string>
+    <string name="diag_transport">Active network</string>
+    <string name="diag_interface">Interface</string>
+    <string name="diag_addresses">Addresses</string>
+    <string name="diag_dns">DNS servers</string>
+    <string name="diag_routes">Default routes</string>
+    <string name="diag_mtu">MTU</string>
+    <string name="diag_metered">Metered</string>
+
+    <string name="diag_copy">Copy report</string>
+    <string name="diag_copy_note">The report contains your IP addresses. Share it only with people you trust.</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stats_title">Statistics</string>
+    <string name="stats_tunnel">VPN tunnel traffic</string>
+    <string name="stats_session">This session</string>
+    <string name="stats_today">Today</string>
+    <string name="stats_month">This month</string>
+    <string name="stats_30_days">Last 30 days</string>
+    <string name="stats_chart_description">Daily VPN traffic for the last 30 days</string>
+    <string name="stats_chart_caption">Download + upload through the tunnel per day, oldest on the left.</string>
+    <string name="stats_device">Whole device</string>
+    <string name="stats_device_since_boot">Since last restart</string>
+    <string name="stats_device_note">All traffic on this phone, with or without the VPN, as reported by Android. It is not the same as the tunnel figures above.</string>
+    <string name="stats_clear">Clear history</string>
+    <string name="stats_clear_title">Clear traffic history?</string>
+    <string name="stats_clear_body">Daily totals are deleted from this device.</string>
+    <string name="stats_cancel">Cancel</string>
+    <string name="stats_local_note">Traffic history is stored only on this device and never uploaded.</string>
+</resources>

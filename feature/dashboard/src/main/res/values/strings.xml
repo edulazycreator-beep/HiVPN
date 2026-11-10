@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dash_brand">Hi VPN</string>
+    <string name="dash_tagline">Your Connection. Your Privacy.</string>
+
+    <string name="pill_protected">Protected</string>
+    <string name="pill_connecting">Connecting</string>
+    <string name="pill_unprotected">Not protected</string>
+
+    <string name="state_disconnected">Disconnected</string>
+    <string name="state_connecting">Connecting…</string>
+    <string name="state_connected">Connected</string>
+    <string name="state_reconnecting">Reconnecting…</string>
+    <string name="state_disconnecting">Disconnecting…</string>
+    <string name="state_failed">Connection failed</string>
+
+    <string name="action_connect">Connect</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="action_retry">Try again</string>
+
+    <string name="dash_section_connection">Connection</string>
+    <string name="dash_section_traffic">Traffic</string>
+    <string name="dash_section_network">Network</string>
+    <string name="dash_server">Server</string>
+    <string name="dash_no_server">No server selected</string>
+    <string name="dash_server_unavailable">Selected server unavailable</string>
+    <string name="dash_change">Change</string>
+    <string name="dash_protocol">Protocol</string>
+    <string name="dash_encryption">Encryption</string>
+    <string name="dash_encryption_value">ChaCha20-Poly1305</string>
+    <string name="dash_tunnel_address">Tunnel address</string>
+    <string name="dash_duration">Duration</string>
+    <string name="dash_download">Download</string>
+    <string name="dash_upload">Upload</string>
+    <string name="dash_session_data">This session</string>
+    <string name="dash_graph_description">Download and upload speed over the last minute</string>
+    <string name="dash_latency">Latency</string>
+    <string name="dash_public_ip">Public IP</string>
+    <string name="dash_refresh">Refresh</string>
+    <string name="dash_facts_via_vpn">Measured through the VPN tunnel.</string>
+    <string name="dash_facts_direct">Measured without VPN: this is the address websites see now.</string>
+    <string name="dash_choose_server_first">Choose a server first.</string>
+
+    <string name="err_permission">VPN permission was not granted. Tap Connect to try again.</string>
+    <string name="err_engine_unavailable">This build does not include a VPN engine.</string>
+    <string name="err_revoked">Another VPN app took over, or VPN access was turned off in system settings.</string>
+    <string name="err_handshake">The server did not respond. Check your network or try another server.</string>
+    <string name="err_account">Sign in or create an account in Settings to use Hi VPN servers.</string>
+    <string name="err_device_limit">Your plan\'s device limit is reached. Remove a device in Settings.</string>
+    <string name="err_api">The Hi VPN service could not be reached. Try again shortly.</string>
+    <string name="err_config">The connection settings are invalid. Check the configuration or profile.</string>
+    <string name="err_unknown">Something went wrong. Try again.</string>
+</resources>

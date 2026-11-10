@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="servers_title">Servers</string>
+    <string name="servers_search_hint">Search country, city or config</string>
+    <string name="servers_my_configs">My WireGuard servers</string>
+    <string name="servers_import_file">Import .conf file</string>
+    <string name="servers_import_paste">Paste config</string>
+    <string name="servers_import">Import</string>
+    <string name="servers_cancel">Cancel</string>
+    <string name="servers_imported">Imported \"%1$s\"</string>
+    <string name="servers_import_failed">Could not import: %1$s</string>
+    <string name="servers_delete_config">Delete</string>
+    <string name="servers_delete_title">Delete \"%1$s\"?</string>
+    <string name="servers_delete_body">The configuration and its private key are removed from this device. This cannot be undone.</string>
+    <string name="servers_paste_title">Paste WireGuard configuration</string>
+    <string name="servers_paste_name">Name</string>
+    <string name="servers_paste_config">Configuration ([Interface] … [Peer] …)</string>
+    <string name="servers_paste_note">The private key is moved to encrypted storage and is never shown again.</string>
+
+    <string name="servers_directory">Hi VPN servers</string>
+    <string name="servers_recommended">Recommended</string>
+    <string name="servers_favorites">Favorites</string>
+    <string name="servers_refresh">Refresh</string>
+    <string name="servers_measure">Measure ping</string>
+    <string name="servers_refresh_failed">Could not refresh the server list.</string>
+    <string name="servers_no_match">No servers match your search.</string>
+    <string name="servers_no_api">This build is not connected to a Hi VPN server directory. You can still use your own WireGuard server above.</string>
+    <string name="servers_sign_in">Sign in or create an account in Settings to load Hi VPN servers.</string>
+    <string name="servers_empty_refresh">No servers loaded yet. Tap Refresh.</string>
+    <string name="servers_selected">Selected</string>
+    <string name="servers_favorite">Add to favorites</string>
+    <string name="servers_unfavorite">Remove from favorites</string>
+    <string name="servers_load">%1$d%% load</string>
+    <string name="servers_ping">%1$d ms</string>
+    <string name="servers_unreachable">unreachable</string>
+    <string name="servers_status_maintenance">Maintenance</string>
+    <string name="servers_status_offline">Offline</string>
+</resources>

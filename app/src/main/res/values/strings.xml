@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hi VPN</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_servers">Servers</string>
+    <string name="nav_stats">Statistics</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="lock_title">Unlock Hi VPN</string>
+    <string name="lock_body">The app is locked. The VPN keeps running while it is locked.</string>
+    <string name="lock_unlock">Unlock</string>
+    <string name="lock_cancel">Cancel</string>
+</resources>

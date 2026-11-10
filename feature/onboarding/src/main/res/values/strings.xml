@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="brand_name">Hi VPN</string>
+    <string name="onb_skip">Skip</string>
+    <string name="onb_next">Next</string>
+    <string name="onb_get_started">Get started</string>
+
+    <string name="onb_what_title">Your connection, your privacy</string>
+    <string name="onb_what_body">Hi VPN sends your device\'s traffic through an encrypted WireGuard tunnel to a server you choose, so your network operator only sees encrypted data going to that server.</string>
+
+    <string name="onb_how_title">How the protection works</string>
+    <string name="onb_how_body">Traffic is encrypted on your phone and decrypted on the VPN server. Websites see the server\'s IP address instead of yours. A VPN does not make you anonymous and does not block tracking inside websites.</string>
+
+    <string name="onb_permission_title">Android will ask for permission</string>
+    <string name="onb_permission_body">The first time you connect, Android shows a system dialog asking to allow Hi VPN to set up a VPN connection. Hi VPN cannot connect without it. Only one VPN app can be active at a time.</string>
+
+    <string name="onb_privacy_title">What we keep, and what we don\'t</string>
+    <string name="onb_privacy_body">Your private key is created on this device and never leaves it. Hi VPN does not record the sites you visit or the content of your traffic. The full list of data we store is in Settings → Privacy.</string>
+
+    <string name="onb_connect_title">Connect with one tap</string>
+    <string name="onb_connect_body">Tap the large button on the home screen. It turns green only after the tunnel has actually completed a handshake with the server.</string>
+
+    <string name="onb_servers_title">Choose where to connect</string>
+    <string name="onb_servers_body">Pick a server by country and city in the Servers tab. Closer servers are usually faster.</string>
+</resources>

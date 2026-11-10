@@ -1,0 +1,65 @@
+# Control plane: PostgreSQL + Hi VPN API + nginx (TLS).
+# Usage: see docs/SERVER_DEPLOYMENT.md. Copy .env.example to .env first.
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: hivpn
+      POSTGRES_USER: hivpn
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set in .env}
+    volumes:
+      - db:/var/lib/postgresql/data
+    networks: [internal]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hivpn"]
+      interval: 5s
+      retries: 10
+
+  api:
+    build: ../../backend
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      HIVPN_DATABASE_URL: postgres://hivpn:${POSTGRES_PASSWORD}@db:5432/hivpn?sslmode=disable
+      HIVPN_TOKEN_SECRET: ${HIVPN_TOKEN_SECRET:?set in .env}
+      HIVPN_ACCOUNT_PEPPER: ${HIVPN_ACCOUNT_PEPPER:?set in .env}
+      HIVPN_DIRECTORY_KEY: /secrets/directory.pem
+      HIVPN_TRUSTED_PROXY: 172.30.0.10
+      HIVPN_NODE_CA: /secrets/node-ca.crt
+      HIVPN_NODE_CERT: /secrets/api-node.crt
+      HIVPN_NODE_KEY: /secrets/api-node.key
+    volumes:
+      - ./secrets:/secrets:ro
+    ports:
+      # Node API (mutual TLS) is exposed directly; VPN nodes connect here.
+      - "8443:8443"
+    networks:
+      internal:
+        ipv4_address: 172.30.0.20
+
+  nginx:
+    image: nginx:1.27-alpine
+    restart: unless-stopped
+    depends_on: [api]
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+      - ./certbot-www:/var/www/certbot:ro
+    networks:
+      internal:
+        ipv4_address: 172.30.0.10
+
+volumes:
+  db:
+
+networks:
+  internal:
+    ipam:
+      config:
+        - subnet: 172.30.0.0/24
