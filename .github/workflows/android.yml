@@ -36,12 +36,7 @@ jobs:
 
       - uses: gradle/actions/setup-gradle@v4
 
-      - name: Lint
-        run: ./gradlew lintDebug $HIVPN_GRADLE_ARGS --stacktrace
-
-      - name: Unit tests
-        run: ./gradlew testDebugUnitTest :domain:test $HIVPN_GRADLE_ARGS --stacktrace
-
+      # Build first so a lint or test finding never hides whether the app compiles.
       - name: Debug APK
         run: ./gradlew :app:assembleDebug $HIVPN_GRADLE_ARGS --stacktrace
 
@@ -51,6 +46,19 @@ jobs:
           name: hivpn-debug-${{ github.sha }}
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
+
+      - name: Unit tests
+        run: ./gradlew testDebugUnitTest :domain:test $HIVPN_GRADLE_ARGS --continue
+
+      - name: Lint
+        run: ./gradlew lintDebug $HIVPN_GRADLE_ARGS --continue
+
+      # Print every finding into the job log (report artifacts are not always reachable).
+      - name: Print lint and test failures
+        if: failure()
+        run: |
+          find . -path '*lint_intermediate_text_report*' -name '*.txt' -exec sh -c 'grep -q "Error:" "$1" && cat "$1"' _ {} \;
+          find . -path '*/test-results/*' -name '*.xml' -exec grep -l '<failure' {} \; | xargs -r cat
 
       - name: Upload reports
         if: failure()
